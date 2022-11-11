@@ -75,7 +75,7 @@ function orderByYear(moviesArray) {
 function orderAlphabetically(moviesArray) {
   const orderMoviesByYear = [...moviesArray];
   const orderingMovies = orderMoviesByYear.sort((a, b) => {
-    return a.title < b.title ? -1 : 1; // if the year is the same it orders by title
+    return a.title < b.title ? -1 : 1; 
   });
   const theFirst20Titles = orderingMovies.slice(0, 20);
   const onlyTheTitles = theFirst20Titles.map(function (movie) {
